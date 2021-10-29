@@ -1,0 +1,83 @@
+apply plugin: 'com.android.application'
+
+android {
+//    compileSdkVersion 29
+    compileSdkVersion COMPILE_SDK_VERSION
+
+
+
+    defaultConfig {
+        applicationId "com.qq.xg4all"
+        minSdkVersion MIN_SDK_VERSION
+//        targetSdkVersion 29
+        targetSdkVersion TARGET_SDK_VERSION
+        versionCode 3
+        versionName "1.2"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        manifestPlaceholders = [
+
+                XG_ACCESS_ID:"1500010967",
+                XG_ACCESS_KEY : "AICVX3G714U4",
+                HW_APPID: "100167977",
+                PACKAGE_NAME:"com.qq.xg4all"
+
+        ]
+
+        multiDexEnabled true
+
+        javaCompileOptions{
+            annotationProcessorOptions{
+                includeCompileClasspath  true
+            }
+        }
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
+    //    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    // fcm 推送
+//    implementation 'com.tencent.tpns:fcm:1.1.2.1-release'
+//    implementation  'com.google.firebase:firebase-messaging:17.6.0'
+
+    // 金刚扫描库
+    implementation 'com.tencent.jg:jg:1.1'
+    implementation 'com.tencent.tpns:tpns:1.1.6.0-release'
+
+//    implementation 'com.tencent.tpns:meizu:1.1.6.0-release'
+//    implementation 'com.tencent.tpns:huawei:1.1.6.0-release'
+//    implementation 'com.tencent.tpns:oppo:1.1.6.0-release'
+//    implementation 'com.tencent.tpns:xiaomi:1.1.6.0-release'
+//    implementation 'com.tencent.tpns:vivo:1.1.6.0-release'
+    implementation files('libs/xinge-1.2.2-SNAPSHOT-jar-with-dependencies.jar')
+
+    implementation 'com.android.support:multidex:1.0.3'
+}
+
+apply plugin: 'com.google.gms.google-services'

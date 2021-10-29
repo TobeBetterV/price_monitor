@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "648867471701",
+    "firebase_url": "https://xg4all-e1ec1.firebaseio.com",
+    "project_id": "xg4all-e1ec1",
+    "storage_bucket": "xg4all-e1ec1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:648867471701:android:076752035527b8a2",
+        "android_client_info": {
+          "package_name": "com.qq.xg4all"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "648867471701-sofs9j47rcoc3oem3dm7mttfo2fe5oe0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8OHgArmmXH_cZd-opZndqAag3U_WlD1g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
