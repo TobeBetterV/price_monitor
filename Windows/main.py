@@ -4,7 +4,6 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
 import requests
-import simpleaudio
 
 # 函数实现发送信息的功能，信息内容体现在message参数中
 
@@ -80,8 +79,7 @@ def push_it(repo_info):
         print(repo_info[2] + '推送失败')
 
 def audio_play():
-    wave_obj = simpleaudio.WaveObject.from_wave_file("./Chord.wav")
-    wave_obj.play()
+    print('play none')
 
 # 将符合条件的项目URL存入list变量中，便于查重
 history_list = []
