@@ -67,13 +67,33 @@ def judge_info(goods_href):
 
     except Exception as e:
         print(goods_href + message)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 614d9b9c1d80b4ce84eab7a7f2a67e166178ec47
 # Push 到手机
 def push_it(repo_info):
     title = repo_info[0]
     url = ' ' +repo_info[2]
     message = repo_info[1]
+<<<<<<< HEAD
     try:
         requests.get('https://api.day.app/*****填写自己的地址*****/'+title+'/'+message+'?url='+url)
+=======
+    source = "s-********************8"
+    receiver = "u-********************8"
+
+    try:
+        requests.post("https://api.alertover.com/v1/alert",
+                      data = {
+                          "receiver":receiver,
+                          "source":source,
+                          "content":message,
+                          "title":title,
+                          "url":url
+                      }
+                      )
+>>>>>>> 614d9b9c1d80b4ce84eab7a7f2a67e166178ec47
         print('已推送')
 
     except Exception as e:
@@ -86,7 +106,11 @@ def audio_play():
 # 将符合条件的项目URL存入list变量中，便于查重
 history_list = []
 # 目标词（用于检查标题是否包含）
+<<<<<<< HEAD
 goal_strings = ['mini','Mini','pencil', '妙控','Magic','magic','Pencil']
+=======
+goal_strings = ['mini','Mini','iphone', 'iPhone','坚果']
+>>>>>>> 614d9b9c1d80b4ce84eab7a7f2a67e166178ec47
 # 设置最低价格
 price_high = 10000
 # 开启浏览器
@@ -98,4 +122,8 @@ while True:
     this_time = time.asctime( time.localtime(time.time()))[11:16]
     print('截至'+this_time+ '，历史列表里共 ' + str(len(history_list)) + '个，其中增加 ' +str(len(history_list) - len_history_list) + '个')
     len_history_list = len(history_list)
+<<<<<<< HEAD
     time.sleep(2)
+=======
+    time.sleep(2)
+>>>>>>> 614d9b9c1d80b4ce84eab7a7f2a67e166178ec47
