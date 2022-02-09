@@ -10,7 +10,7 @@
 
 ![Snipaste_2021-11-01_19-57-45](README.assets/Snipaste_2021-11-01_19-57-45.png)
 
-主程序 main.py 适用于Mac os。
+主程序 main.py 适用于Mac OS。
 
 不想一直开着电脑的话，可以查看这篇文章[部署到Linux](https://juejin.cn/user/1451783954639693)。
 
