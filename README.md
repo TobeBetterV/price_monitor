@@ -2,7 +2,7 @@
 
 用selenium对[数字尾巴二手区](https://www.dgtle.com/sale)的选定商品进行价格监测
 
-监测新发布商品的标题，把选定商品通过Bark把消息push到手机。
+监测新发布商品的标题，通过Bark把符合条件的新内容push到手机。
 
 ![IMG_5073](README.assets/IMG_5073.PNG)
 
