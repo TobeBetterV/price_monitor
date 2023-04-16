@@ -1,8 +1,9 @@
 # price_monitor
 
-用selenium对[数字尾巴二手区](https://www.dgtle.com/sale)的选定商品进行价格监测
+用selenium或requests对[数字尾巴二手区](https://www.dgtle.com/sale)的选定商品进行价格监测。
 
 监测新发布商品的标题，通过Bark把符合条件的新内容push到手机。
+
 
 ![IMG_5073](README.assets/IMG_5073.PNG)
 
@@ -10,7 +11,7 @@
 
 ![Snipaste_2021-11-01_19-57-45](README.assets/Snipaste_2021-11-01_19-57-45.png)
 
-主程序 main.py 适用于macOS。
+主程序 main.py 使用API分析json数据，此方法为近期更新，后续有可能失效，适用于macOS。
 
 不想一直开着电脑的话，可以查看这篇文章[部署到Linux](https://juejin.cn/user/1451783954639693)。
 
